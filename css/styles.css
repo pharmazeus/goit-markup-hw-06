@@ -234,6 +234,12 @@ input {
   pointer-events: none;
   visibility: hidden;
 }
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .mobile-menu-container {
   position: relative;
   padding-top: 72px;
