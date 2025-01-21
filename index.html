@@ -27,7 +27,7 @@
   <body>
     <!-- logo section -->
     <header class="page-header">
-      <div class="container header-container">
+      <div class="header-container">
         <nav class="nav-header">
           <a class="logo header-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
@@ -73,10 +73,10 @@
           <nav class="mobile-menu-nav">
             <ul class="mob-nav-list">
               <li class="mob-nav-item">
-                <a class="mob-nav-link" href="">Portfolio</a>
+                <a class="mob-nav-link" href="">Studio</a>
               </li>
               <li class="mob-nav-item">
-                <a class="mob-nav-link" href="">Service</a>
+                <a class="mob-nav-link" href="">Potfolio</a>
               </li>
               <li class="mob-nav-item">
                 <a class="mob-nav-link" href="">Contacts</a>
@@ -104,28 +104,28 @@
             <li class="mob-menu-icon-item">
               <a class="mob-menu-icon-link" href="">
                 <svg width="24" height="24">
-                  <use href="/images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="mob-menu-icon-item">
               <a class="mob-menu-icon-link" href="">
                 <svg width="24" height="24">
-                  <use href="/images/icons.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="mob-menu-icon-item">
               <a class="mob-menu-icon-link" href="">
                 <svg width="24" height="24">
-                  <use href="/images/icons.svg#icon-facebook"></use>
+                  <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="mob-menu-icon-item">
               <a class="mob-menu-icon-link" href="">
                 <svg width="24" height="24">
-                  <use href="/images/icons.svg#icon-linkedin"></use>
+                  <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -138,7 +138,7 @@
 
     <main>
       <section class="hero-section">
-        <div class="container">
+        <div class="hero-container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="order-service-btn" type="button">Order Service</button>
         </div>
@@ -208,12 +208,36 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                src="./images/mark_guererro.jpg"
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-images/desktop-team/mark-reg.jpg  1x,
+                    ./images/team-images/desktop-team/mark-@2x.jpg  2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                  ./images/team-images/tablet-team/mark-reg.jpg  1x,
+                  ./images/team-images/tablet-team/mark@2x-3.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./images/team-images/mobile-team/mark-reg.jpg  1x,
+                  ./images/team-images/mobile-team/mark@2x.jpg  2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                src="./images/team-images/mark_guererro.jpg"
                 alt="Mark Guererro"
                 width="264"
                 height="260"
               />
+              </picture>
+             
 
               <div class="team-wrapper">
                 <h3 class="team-names">Mark Guererro</h3>
@@ -251,12 +275,36 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/tom_ford.jpg"
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-images/desktop-team/tom-reg.jpg  1x,
+                    ./images/team-images/desktop-team/tom@2x.jpg  2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                  ./images/team-images/tablet-team/tom-reg.jpg 1x,
+                  ./images/team-images/tablet-team/tom@2x-2.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./images/team-images/mobile-team/tom-reg.jpg  1x,
+                  ./images/team-images/mobile-team/tom@2x-1.jpg  2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                src="./images/team-images/tom_ford.jpg"
                 alt="Tom Ford avatar"
                 width="264"
                 height="260"
               />
+              </picture>
+             
               <div class="team-wrapper">
                 <h3 class="team-names">Tom Ford</h3>
                 <p class="team-position">Frontend Developer</p>
@@ -293,12 +341,36 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/camila_garcia.jpg"
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-images/desktop-team/camilla-reg.jpg  1x,
+                    ./images/team-images/desktop-team/camilla@2x.jpg  2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                  ./images/team-images/tablet-team/camilla-reg.jpg 1x,
+                  ./images/team-images/tablet-team/camilla@2x-1.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./images/team-images/mobile-team/camilla-reg.jpg  1x,
+                  ./images/team-images/mobile-team/camilla@2x-2.jpg  2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                src="./images/team-images/camila_garcia.jpg"
                 alt="Camila Garcia avatar"
                 width="264"
                 height="260"
               />
+              </picture>
+            
               <div class="team-wrapper">
                 <h3 class="team-names">Camila Garcia</h3>
                 <p class="team-position">Marketing</p>
@@ -335,12 +407,36 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/daniel_wilson.jpg"
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-images/desktop-team/daniel-reg.jpg  1x,
+                    ./images/team-images/desktop-team/daniel@2x.jpg  2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                  ./images/team-images/tablet-team/daniel-reg.jpg 1x,
+                  ./images/team-images/tablet-team/daniel@2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./images/team-images/mobile-team/daniel-reg.jpg  1x,
+                  ./images/team-images/mobile-team/daniel@2x-3.jpg  2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                src="./images/team-images/daniel_wilson.jpg"
                 alt="Daniel Wilson avatar"
                 width="264"
                 height="260"
               />
+              </picture>
+             
               <div class="team-wrapper">
                 <h3 class="team-names">Daniel Wilson</h3>
                 <p class="team-position">UI Designer</p>
@@ -741,7 +837,7 @@
       </div>
     </footer> 
     <!----------MODAL------------->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="close-btn" type="button">
           <svg class="icon-close" width="8" height="8">
@@ -810,13 +906,15 @@
             />
             <label class="label-modal-checkbox" for="user-privacy">
               <span class="modal-custom-checkbox">
-                <svg class="modal-custom-checkbox-icon" width="10" height="8">
+              <svg class="modal-custom-checkbox-icon" width="16" height="16">
                   <use href="./images/icons.svg#icon-check"></use>
-                </svg> </span
-              >I accept the terms and conditions of the
+                </svg> </span>
+                <span>
+              I accept the terms and conditions of the
               <a class="modal-link-privacy-policy accent-color"
                 >Privacy Policy</a
               >
+            </span>
             </label>
           </div>
           <button type="submit" class="submit-modal-btn">Send</button>
